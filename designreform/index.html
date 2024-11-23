@@ -15,12 +15,14 @@
       </div>
       <div class="pc-link">
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">お知らせ</a></li>
-          <li><a href="#">参考事例</a></li>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">ブログ</a></li>
-          <li><a href="#">お知らせ</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="service.html">サービス案内</a></li>
+
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="#case">参考事例</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="blog-category.html">ブログ</a></li>
+          <li><a href="#content-title">お問い合わせ</a></li>
         </ul>
       </div>
     </header>
@@ -29,20 +31,14 @@
         <img src="img/company.jpg" alt="FV" />
       </div>
       <section class="service-introduction">
-        <div>
-          <p>
-            <span class="service-introduction-title">サービス内容</span>
-            弊社は、お客様の大切な住まいを快適で魅力的な空間へと生まれ変わらせることを使命としています。長年にわたる豊富な経験と専門的な知識を活かし、キッチン、バスルーム、リビングルームはもちろん、寝室やホームオフィスに至るまで、住宅のあらゆる部分の改装を手がけています。私たちは、お客様の理想の住まいを実現するために、細部にまでこだわったデザインと高品質な施工を提供しています。
-            <br /><br />
-            私たちの最大の強みは、お客様一人ひとりのライフスタイルやニーズに合わせた、完全にカスタマイズされたソリューションを提供することです。最新のデザイントレンドと高品質な素材を巧みに組み合わせ、機能性と美しさを兼ね備えた、魅力的で居心地の良い空間を創り出します。また、お客様のご要望に応じて、伝統的な和風デザインからモダンな西洋スタイルまで、幅広いデザインオプションをご用意しています。
-            <br /><br />
-            さらに、私たちは環境に配慮した住宅改修にも力を入れています。省エネ効果の高い最新の設備の導入や、再生可能エネルギーシステムの設置、そして高断熱・高気密化などを通じて、エコフレンドリーでサステナブルな住まいづくりをサポートしています。また、バリアフリー化や高齢者向けの設備導入など、ライフステージの変化に合わせた改修も得意としています。お客様のご予算や希望に応じて、部分的な改装から全面的なリノベーションまで、柔軟かつ幅広いサービスを展開しています。
-            <br /><br />
-            弊社では、施工後のアフターケアにも特に力を入れています。定期的なメンテナンスチェックはもちろん、24時間対応の緊急サポート体制を整え、突発的な問題にも迅速に対応いたします。また、施工後の住まいの使い方や維持管理についてのアドバイスも提供し、お客様に長く安心して快適に住まいを楽しんでいただけるよう、きめ細やかなサポートを行っています。
-            <br /><br />
-            私たちは、単なる住宅の改装にとどまらず、お客様の生活の質を真に向上させる空間づくりを目指しています。豊富な実績と頼性の高い技術力、そして常に革新を追求する姿勢で、お客様一人ひとりの夢の住まいを実現いたします。私たちと共に、あなたの理想の住空間を創り上げませんか？お客様のご要望やご相談を、いつでも心よりお待ちしております。
-          </p>
-        </div>
+        <a class="service-introduction-img" href="service.html">
+          <div>
+            <img src="img/service.jpg" alt="#" />
+          </div>
+        </a>
+        <a class="service-introduction-title" href="service.html"
+          >サービス紹介</a
+        >
       </section>
       <div>
         <!-- height -->
@@ -72,12 +68,12 @@
             <hr />
           </div>
         </div>
-        <a href="#">read-more</a>
+        <a class="readmore" href="news.html">read-more</a>
       </section>
-      <section class="case">
+      <section class="case" id="case">
         <h2 class="content-title">参考事例</h2>
         <div class="case-flex">
-          <a href="#">
+          <a href="case1.html">
             <div>
               <img src="img/case01.jpg" alt="case1" />
             </div>
@@ -110,24 +106,35 @@
         <div>
           <h2 class="content-title">スタッフブログ</h2>
           <div>
-            <p>2024.10.28</p>
-            <p>A様邸改装工事完了。</p>
+            <a href="#">
+              <p>2024.10.28</p>
+              <p>A様邸改装工事完了。</p>
+            </a>
+            <hr />
           </div>
           <div>
-            <p>2024.07.30</p>
-            <p>B様邸改のタイル張替え。</p>
+            <a href="#">
+              <p>2024.07.30</p>
+              <p>B様邸改のタイル張替え。</p>
+            </a>
+            <hr />
           </div>
           <div>
-            <p>2024.07.27</p>
-            <p>C様邸のバスルーム改装。</p>
+            <a href="#">
+              <p>2024.07.27</p>
+              <p>C様邸のバスルーム改装。</p>
+            </a>
+            <hr />
           </div>
         </div>
-        <a href="#">read-more</a>
+
+        <a class="readmore" href="blog-category.html">read-more</a>
       </section>
-      <section>
+      <section class="contect">
         <form action="#">
+          <h2 class="content-title" id="content-title">お問い合わせ</h2>
           <div>
-            <div>
+            <div class="label-content">
               <label for="name">名前<span>必須</span></label>
             </div>
             <div>
@@ -140,7 +147,7 @@
             </div>
           </div>
           <div>
-            <div>
+            <div class="label-content">
               <label for="furigana">フリガナ<span>必須</span></label>
             </div>
             <div>
@@ -153,7 +160,7 @@
             </div>
           </div>
           <div>
-            <div>
+            <div class="label-content">
               <label name="email" for="email">email<span>必須</span></label>
             </div>
             <div>
@@ -165,7 +172,7 @@
             </div>
           </div>
           <div>
-            <div>
+            <div class="label-content">
               <label for="message">お問い合わせ内容<span>必須</span></label>
             </div>
             <div>
@@ -176,9 +183,60 @@
               ></textarea>
             </div>
           </div>
+
+          <div class="date-flex">
+            <div>
+              <div class="label-content">
+                <label name="date" for="date">来店日時<span>必須</span></label>
+              </div>
+              <div class="date-div-content">
+                <div class="date-div">
+                  <input class="date" id="date" type="date" />
+                </div>
+                <div class="select-div">
+                  <select name="time" id="time">
+                    <option>時間を選択してください</option>
+                    <option>9:00~10:00</option>
+                    <option>10:00~11:00</option>
+                    <option>11:00~12:00</option>
+                    <option>13:00~14:00</option>
+                    <option>15:00~16:00</option>
+                    <option>16:00~17:00</option>
+                    <option>17:00~18:00</option>
+                    <option>18:00~19:00</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="label-content">
+                <label name="time" for="time">来店日時<span>必須</span></label>
+              </div> -->
+          </div>
+
+          <input
+            class="submit"
+            type="submit"
+            value="送信
+          "
+          />
         </form>
       </section>
     </main>
+    <footer>
+      <div class="pc-link footer-div">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="service.html">サービス案内</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="#">参考事例</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <span>&copy; DesignReform 2024</span>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
