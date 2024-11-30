@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DesignReformの紹介サイトです。" />
     <link rel="stylesheet" href="css/reset.css" />
+
     <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>DesignReform</title>
   </head>
   <body>
@@ -17,7 +20,6 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="service.html">サービス案内</a></li>
-
           <li><a href="news.html">お知らせ</a></li>
           <li><a href="#case">参考事例</a></li>
           <li><a href="company.html">会社概要</a></li>
@@ -27,10 +29,35 @@
       </div>
     </header>
     <main>
+      <!-- hum -->
+      <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav">
+          <div class="navi">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="service.html">サービス案内</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="#case">参考事例</a></li>
+              <li><a href="company.html">会社概要</a></li>
+              <li><a href="blog-category.html">ブログ</a></li>
+              <li><a href="index.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+      <!-- topボタン -->
+      <a class="top-btn" id="top-btn" href="#"></a>
+      <!--  -->
       <div class="fv">
         <img src="img/company.jpg" alt="FV" />
       </div>
-      <section class="service-introduction">
+      <section data-aos="fade-up" class="service-introduction">
         <a class="service-introduction-img" href="service.html">
           <div>
             <img src="img/service.jpg" alt="#" />
@@ -40,27 +67,25 @@
           >サービス紹介</a
         >
       </section>
-      <div>
-        <!-- height -->
-      </div>
-      <section class="news-section">
+
+      <section data-aos="fade-up" class="news-section">
         <div>
           <h2 class="content-title">お知らせ</h2>
-          <div>
-            <a href="#">
+          <div class="news-section-div">
+            <a href="news-single.html">
               <p>2024.10.28</p>
               <p>Webサイトをリニューアルしました。</p>
             </a>
             <hr />
           </div>
-          <div>
+          <div class="news-section-div">
             <a href="#">
               <p>2024.10.19</p>
               <p>B様邸改装工事を開始しました。</p>
             </a>
             <hr />
           </div>
-          <div>
+          <div class="news-section-div">
             <a href="#">
               <p>2024.10.14</p>
               <p>「あなたの街のリフォーム屋さん」に掲載されました。</p>
@@ -70,7 +95,7 @@
         </div>
         <a class="readmore" href="news.html">read-more</a>
       </section>
-      <section class="case" id="case">
+      <section data-aos="fade-up" class="case" id="case">
         <h2 class="content-title">参考事例</h2>
         <div class="case-flex">
           <a href="case1.html">
@@ -102,7 +127,7 @@
           </a>
         </div>
       </section>
-      <section class="blog-section">
+      <section data-aos="fade-up" class="blog-section">
         <div>
           <h2 class="content-title">スタッフブログ</h2>
           <div>
@@ -130,14 +155,14 @@
 
         <a class="readmore" href="blog-category.html">read-more</a>
       </section>
-      <section class="contect">
+      <section data-aos="fade-up" class="contect">
         <form action="#">
           <h2 class="content-title" id="content-title">お問い合わせ</h2>
           <div>
             <div class="label-content">
               <label for="name">名前<span>必須</span></label>
             </div>
-            <div>
+            <div class="input-div">
               <input
                 id="name"
                 type="text"
@@ -150,7 +175,7 @@
             <div class="label-content">
               <label for="furigana">フリガナ<span>必須</span></label>
             </div>
-            <div>
+            <div class="input-div">
               <input
                 id="furigana"
                 type="text"
@@ -163,7 +188,7 @@
             <div class="label-content">
               <label name="email" for="email">email<span>必須</span></label>
             </div>
-            <div>
+            <div class="input-div">
               <input
                 id="email"
                 type="text"
@@ -175,7 +200,7 @@
             <div class="label-content">
               <label for="message">お問い合わせ内容<span>必須</span></label>
             </div>
-            <div>
+            <div class="input-div">
               <textarea
                 name="message"
                 id="message"
@@ -226,17 +251,28 @@
     <footer>
       <div class="pc-link footer-div">
         <ul>
-          <li><a href="#">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="service.html">サービス案内</a></li>
           <li><a href="news.html">お知らせ</a></li>
-          <li><a href="#">参考事例</a></li>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">ブログ</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#case">参考事例</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="blog-category.html">ブログ</a></li>
+          <li><a href="#content-title">お問い合わせ</a></li>
         </ul>
       </div>
       <span>&copy; DesignReform 2024</span>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // アニメーションを1回のみ実行
+      });
+    </script>
   </body>
 </html>
